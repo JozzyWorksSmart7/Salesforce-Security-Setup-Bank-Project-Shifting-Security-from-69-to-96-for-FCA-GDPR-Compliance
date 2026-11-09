@@ -40,6 +40,13 @@ This table details the strict Principle of Least Privilege (PoLP) enforced acros
 
 ---
 
+
+### 🔒 Visual Verification: Front-Line Agent Data Masking (Carl Agent View)
+<img src="evidence-screenshots/data-masking-carl.png" width="800" alt="Salesforce Account Number Masking In Action" />
+
+*UAT verification showing the system state when logged in as Carl Agent. The native record-triggered flow successfully restricts full account exposures and masks the data value to `****5678` to satisfy strict PCI DSS requirements.*
+
+
 ## 🧪 UAT Testing Log Summary
 To validate the architecture against the security matrix, dynamic user rotation testing was executed using the platform's native "Login As" feature:
 *   **TC-01 (Passed):** Verified Ava Adviser (North West) cannot view or search Harry Patel (South East) due to Private OWD restrictions.
